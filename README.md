@@ -1,4 +1,5 @@
 # Nuxt Minimal Starter
+[![Node.js CI](https://github.com/yuhsiang237/nuxt-static-playground/actions/workflows/node.js.yml/badge.svg)](https://github.com/yuhsiang237/nuxt-static-playground/actions/workflows/node.js.yml)
 
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
