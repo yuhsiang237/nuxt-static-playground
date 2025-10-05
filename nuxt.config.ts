@@ -2,7 +2,16 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-
+  // Disable server-side rendering (SSR), generate only static pages
+  ssr: false,
+  app: {
+    // Base URL for the application.
+    // On GitHub Pages, this should match the repository name
+    baseURL: '/nuxt-static-playground',
+    // Directory where Nuxt will build assets (JS/CSS)
+    // Default is '_nuxt', we rename to 'nuxt' for cleaner URLs
+    buildAssetsDir: 'nuxt',
+  }, 
   modules: [
     '@nuxt/eslint',
     '@nuxt/image',
