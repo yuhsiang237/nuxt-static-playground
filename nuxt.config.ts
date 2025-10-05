@@ -2,10 +2,16 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  ssr: false, // 禁用伺服器端渲染，僅生成靜態頁面
+  // Disable server-side rendering (SSR), generate only static pages
+  ssr: false,
   app: {
-    baseURL: '/nuxt-static-playground/', // 設定你的 GitHub 儲存庫名稱
-  },
+    // Base URL for the application.
+    // On GitHub Pages, this should match the repository name
+    baseURL: '/nuxt-static-playground',
+    // Directory where Nuxt will build assets (JS/CSS)
+    // Default is '_nuxt', we rename to 'nuxt' for cleaner URLs
+    buildAssetsDir: 'nuxt',
+  }, 
   modules: [
     '@nuxt/eslint',
     '@nuxt/image',
